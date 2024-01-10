@@ -9,7 +9,10 @@ const  wordSchema = mongoose.Schema({
         type:String,
         required:[true, 'please add a text value']
     },
-    
+    meaning:{
+        type:String,
+        
+    },
 },
 {
     timestamps: true
