@@ -3,11 +3,13 @@ const bcrypt = require('bcryptjs');
 const asyncHandler = require('express-async-handler');
 const Word = require('../model/wordsModel')
 const axios = require('axios');
+
 // @desc get words
 //@route GET/api/worda
 //@access Private 
 const getWords = asyncHandler(async(req,res) =>{
-    const words = await Word.find({})
+    
+    const words = await Word.find({bookname:req.body.bookname}).sort({timestamps:'asc'})
     res.status(200).json(words)
 
 })

@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  font-family: poppins;
+}
+html{
+  height: 100%;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.bookCard{
+  
+ 
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 10px;
+  word-wrap: break-word;
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+ 
+  
+  
+  
+  
+  
+}
+.bookCard *{
+  margin: 1px;
+  margin-bottom: 5px;
+  height: max-content;
+ 
+
+
+}
+.bookCard img{
+  height: 200px;
+  width: 200px;
+}
+.booklist{
+  display:flex;
+
+  flex-wrap: wrap;
+  gap: 30px;
+  
+}
+.viewButton{
+  background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%);
+ 
+  padding: 2px 8px;
+  text-align: center;
+  
+  transition: 0.5s;
+  background-size: 200% auto;
+  font-family: poppins;
+  /* font-weight: bold; */
+  color: white;            
+  
+  border-radius: 5px;
+  display: block;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  
+   
+    
+}
+.viewButton:hover{
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+         
+
+.wordcard{
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  width: 230px;
+  margin: 10px;
+  
+}
+/* .wordcard *{
+  margin: 5px;
+} */
+.wordlist{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  
+}
+.addbar{
+  
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+.addbar input[type=text] {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 2px 50px 0 rgba( 31, 38, 135, 0.37 );
+  text-align: start;
+  
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 5px;
+  border: none;
+  width: 400px;
+  outline: none;
+}
+
+/* .wordcard p{
+  
+} */
+.bg{
+  
+  /* background-image: url("https://img.freepik.com/free-photo/luxury-plain-green-gradient-abstract-studio-background-empty-room-with-space-your-text-picture_1258-71031.jpg?w=1380&t=st=1705325922~exp=1705326522~hmac=f75709c968a6c8a10b811db21d2635dc1b3cdad77fb4cf34cfa91b1e22ba7c43");
+   */
+   background-image: url("https://img.freepik.com/free-vector/line-background-wave-gradient-template-design_483537-5083.jpg?w=1060&t=st=1705325990~exp=1705326590~hmac=823fb7fe03524daa633c9b37312937d41f9d2800e0a28baa12077871e3925ecb");
+  background-attachment: fixed;
+  height: 100%;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+hr{
+  border: 1px solid black;
+}
+input{
+  outline: none;
+}
+.addButton{
+  background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%);
+ 
+  padding: 5px 8px;
+  text-align: center;
+  
+  transition: 0.5s;
+  background-size: 200% auto;
+  font-family: poppins;
+  /* font-weight: bold; */
+  color: white;            
+  
+  border-radius: 5px;
+  display: block;
+
+   
+    
+}
+.addButton:hover{
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.parallax{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  z-index: 0;
+}
+#text{
+  position: absolute;
+  font-size: 9em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgb(0,0,0,.2);
+  z-index: 0;
+}
+.parallax img{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  pointer-events:none ;
+  z-index: 0;
+ 
+}
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.sec{
+  position: relative;
+  background:#003329;
+  padding: 100px;
+ 
+
+ 
+}
+.sec h2{
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.sec p{
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+
+/* 
+#textblock {
+  background-color: #003329;
+  height: 100vh;
+ 
+}
+
+#textblock-container {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+#textblock-title {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  
+}
+
+#textblock-content {
+  color: #fff;
+  font-size: 20px;
+}
+
+#textblock-footer {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  margin-bottom: 20px;
+
+}
+
+#textblock-devsense {
+  text-decoration: none;
+  color: #ffaf1b;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.animation, .animation_layer {
+	height: 1000px;
+}
+
+.animation {
+  display: block;
+	position: relative;
+	z-index: 10;
+  
+}
+
+.animation_layer {
+	background-position: bottom center;
+	background-size: auto 1038px;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: absolute;
+}
+.animation_layer.parallax {
+	position: fixed;
+} */
+/* #hill1{
+  background-image:url("./bgimgs/hill1.png") ;
+}
+#hill2{
+  background-image:url("./bgimgs/hill2.png") ;
+}
+#hill3{
+  background-image:url("./bgimgs/hill3.png") ;
+}
+#hill4{
+  background-image:url("./bgimgs/hill4.png") ;
+}
+#hill5{
+  background-image:url("./bgimgs/hill5.png") ;
+}
+#leaf{
+  background-image:url("./bgimgs/leaf.png") ;
+}
+#tree{
+  background-image:url("./bgimgs/tree.png") ;
+}
+#plant{
+  background-image:url("./bgimgs/plant.png") ;
+} */
+.vBbtn{
+  background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF  51%, #ECE9E6  100%);
+  
+  padding: 5px 8px;
+  text-align: center;
+  
+  padding: 15px 45px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  font-family: poppins;
+  /* font-weight: bold; */
+  color: black;            
+  
+  box-shadow: 0 0 1px #eee;
+  border-radius: 5px;
+  display: block;
+  font-family: poppins;
+  font-weight: bold;
+}
+         
+
+
+.vBbtn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: black;
+  text-decoration: none;
+  box-shadow: 0 0 10px #eee;
+  
+}
+         
+.btn-grad {
+  background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF  51%, #ECE9E6  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+ 
+}
