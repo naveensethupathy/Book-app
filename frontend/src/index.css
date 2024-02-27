@@ -93,6 +93,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   border-radius: 10px;
   width: 230px;
   margin: 10px;
+  position: relative;
   
 }
 /* .wordcard *{
@@ -364,3 +365,35 @@ header{
   text-decoration: none;
  
 }
+.count{
+  float: right;
+  margin-right: 5%;
+}
+.deleteButton{
+    background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%);
+   
+    padding: 2px 8px;
+    text-align: center;
+    
+    transition: 0.5s;
+    background-size: 200% auto;
+    font-family: poppins;
+    /* font-weight: bold; */
+    color: white;            
+    
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    
+    
+     
+      
+  }
+  .deleteButton:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+    

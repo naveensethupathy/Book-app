@@ -9,7 +9,7 @@ const axios = require('axios');
 //@access Private 
 const getWords = asyncHandler(async(req,res) =>{
     
-    const words = await Word.find({bookname:req.body.bookname}).sort({timestamps:'asc'})
+    const words = await Word.find({bookname:req.body.bookname}).sort({"createdAt":-1})
     res.status(200).json(words)
 
 })
@@ -32,8 +32,18 @@ const setWords = asyncHandler( async(req,res) =>{
     res.status(200).json(words)
     
 })
+// @desc get words
+//@route GET/api/worda
+//@access Private 
+const getWordCount = asyncHandler(async(req,res) =>{
+    
+    const count = await Word.find({bookname:req.body.bookname}).count()
+    res.status(200).json(count)
+
+})
 module.exports = {
     getWords,
-    setWords
+    setWords,
+    getWordCount
    
 }
