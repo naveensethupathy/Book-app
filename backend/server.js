@@ -6,6 +6,7 @@ const axios = require('axios');
 const cors = require('cors');
 const connectDB = require('./config/db')
 const port = process.env.PORT || 4000
+const path = require('path')
 
 connectDB()
 
