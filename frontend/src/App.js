@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { BrowserRouter as Router, Route,Routes} from "react-router-dom";
+import { HashRouter as Router, Route,Routes} from "react-router-dom";
 import Bookslist from "./components/Bookslist";
 import Wordslist from "./components/Wordslist";
 import Library from "./components/Library";
@@ -10,7 +10,7 @@ function App() {
     <Router>
     <div className="App">
       <Routes>
-      <Route path="/" exact Component={Home1}></Route>
+      <Route exact path="/" Component={Home1}></Route>
       <Route path="/books" exact Component={Bookslist}></Route>
       <Route path="/words" Component={Wordslist}></Route>
       </Routes>
